@@ -1,3 +1,4 @@
+import Form from "@/components/Form";
 import Table from "@/components/Table";
 import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
@@ -19,7 +20,7 @@ export default function Home() {
 
                     <div className="container mx-auto py-5 flex justify-between border-b">
                         <div className="left flex gap-3">
-                            <button className="flex bg-indigo-500 text-white px-4 py-2 border rounded hover:bg-indigo-700 transition-transform active:scale-95 hover:opacity-75">
+                            <button className="flex bg-indigo-500 text-white px-4 py-2 border rounded hover:bg-indigo-600 transition-transform active:scale-95">
                                 Add Employee
                                 <span className="pl-3">
                                     <BiUserPlus size={24} />
@@ -27,10 +28,12 @@ export default function Home() {
                             </button>
                         </div>
                     </div>
-
-                    {/* Collapsable form start */}
-                    {/* Collapsable form end */}
                 </main>
+                {/* Collapsable form start */}
+                <div className="container mx-auto">
+                    <Form />
+                </div>
+                {/* Collapsable form end */}
                 {/* Table start */}
                 <div className="container mx-auto">
                     <Table />
