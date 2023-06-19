@@ -1,3 +1,4 @@
+import Table from "@/components/Table";
 import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
 
@@ -29,9 +30,12 @@ export default function Home() {
 
                     {/* Collapsable form start */}
                     {/* Collapsable form end */}
-                    {/* Table start */}
-                    {/* Table end */}
                 </main>
+                {/* Table start */}
+                <div className="container mx-auto">
+                    <Table />
+                </div>
+                {/* Table end */}
             </section>
         </>
     );
